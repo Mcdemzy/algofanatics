@@ -1,7 +1,12 @@
 import React from "react";
+import Card from "./components/card/Card";
 
 const App = () => {
-  return <div className="text-[60px]">App</div>;
+  return (
+    <>
+      <Card />
+    </>
+  );
 };
 
 export default App;

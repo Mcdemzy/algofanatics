@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #000;
-  color: #fff;
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-400px);
+  } /* Adjust the value as needed */
+}
+
+.animated-images {
+  animation: moveUp 10s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+.left-image-animation {
+  width: 100%;
 }
